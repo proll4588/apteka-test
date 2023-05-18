@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Lorem ipsum dolor sit amet.",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
-      "isFav": true
+      "isFav": false
     },
     {
       "id": 2,
@@ -16,13 +16,13 @@
       "id": 3,
       "title": "Title 3",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
-      "isFav": true
+      "isFav": false
     },
     {
       "id": 4,
       "title": "Title 4",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
-      "isFav": false
+      "isFav": true
     },
     {
       "id": 5,
@@ -47,6 +47,20 @@
       "title": "Title 8",
       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
       "isFav": false
+    }
+  ],
+  "favorites": [
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 1
     }
   ]
 }
