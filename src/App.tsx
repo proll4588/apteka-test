@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Search from './components/Search/Search'
+import PostList from './components/PostList/PostList'
+import usePost from './hooks/post.hook'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    const { posts, searchPost, changeFav } = usePost()
+
+    return (
+        <div className='App'>
+            <div className='App__container'>
+                <Search onChange={searchPost} />
+                <PostList
+                    posts={posts}
+                    onFavChange={changeFav}
+                />
+            </div>
+        </div>
+    )
 }
 
-export default App;
+export default App

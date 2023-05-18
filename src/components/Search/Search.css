@@ -1,0 +1,28 @@
+.Search {
+    width: 100%;
+}
+.Search__container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+.Search__input {
+    width: 100%;
+    max-width: 300px;
+
+    padding: 7px 10px;
+
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+.Search__input:focus,
+.Search__input:hover {
+    border: 1px solid black;
+}

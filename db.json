@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Lorem ipsum dolor sit amet.",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
+      "isFav": true
+    },
+    {
+      "id": 2,
+      "title": "Title 2",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
+      "isFav": false
+    },
+    {
+      "id": 3,
+      "title": "Title 3",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
+      "isFav": true
+    },
+    {
+      "id": 4,
+      "title": "Title 4",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
+      "isFav": false
+    },
+    {
+      "id": 5,
+      "title": "Title 5",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
+      "isFav": true
+    },
+    {
+      "id": 6,
+      "title": "Title 6",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
+      "isFav": false
+    },
+    {
+      "id": 7,
+      "title": "Title 7",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
+      "isFav": true
+    },
+    {
+      "id": 8,
+      "title": "Title 8",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorem.",
+      "isFav": false
+    }
+  ]
+}
