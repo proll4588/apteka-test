@@ -2,15 +2,9 @@ import './App.css'
 import Search from './components/Search/Search'
 import PostList from './components/PostList/PostList'
 import usePost from './hooks/post.hook'
-import { useEffect } from 'react'
 
 const App = () => {
     const { favorites, posts, searchPost, changeFav } = usePost()
-
-    useEffect(() => {
-        console.log('favorites >> ', favorites)
-        console.log('posts >> ', posts)
-    }, [])
 
     return (
         <div className='App'>
