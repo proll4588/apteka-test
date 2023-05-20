@@ -1,7 +1,6 @@
 import { FC } from 'react'
 import PostProps from './Post.props'
-import { MdOutlineFavorite } from 'react-icons/md'
-import classNames from 'classnames'
+import FavoriteIcon from '../FavoriteIcon/FavoriteIcon'
 import './Post.css'
 
 const Post: FC<PostProps> = ({ title, body, isFav, onClick }) => {
@@ -17,11 +16,9 @@ const Post: FC<PostProps> = ({ title, body, isFav, onClick }) => {
             <div className='Post__container'>
                 <h4 className='Post__title'>{title}</h4>
                 <p className='Post__body'>{body}</p>
-                <MdOutlineFavorite
-                    className={classNames(
-                        'Post__fav',
-                        isFav ? 'Post__fav_check' : ''
-                    )}
+                <FavoriteIcon
+                    isActive={isFav}
+                    className='Post__fav'
                 />
             </div>
         </div>

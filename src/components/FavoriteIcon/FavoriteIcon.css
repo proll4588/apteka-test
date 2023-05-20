@@ -1,0 +1,8 @@
+.FavoriteIcon {
+    color: grey;
+    transition: 0.2s;
+}
+
+.FavoriteIcon_check {
+    color: red;
+}

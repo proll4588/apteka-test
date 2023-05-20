@@ -46,10 +46,4 @@
     position: absolute;
     top: 0;
     right: 0;
-    color: grey;
-    transition: 0.2s;
-}
-
-.Post__fav_check {
-    color: red;
 }
