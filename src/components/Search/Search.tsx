@@ -1,19 +1,11 @@
-import React, { FC, useEffect, useState } from 'react'
+import React, { FC } from 'react'
 import SearchProps from './Search.props'
-import useDebounce from '../../hooks/debounce.hook'
 import './Search.css'
 
-const Search: FC<SearchProps> = ({ onChange }) => {
-    const [search, setSearch] = useState<string>('')
-    const deb = useDebounce(search)
-
+const Search: FC<SearchProps> = ({ onChange, value }) => {
     const inputHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setSearch(e.target.value)
+        onChange && onChange(e.target.value)
     }
-
-    useEffect(() => {
-        onChange && onChange(deb)
-    }, [deb])
 
     return (
         <div className='Search'>
@@ -22,7 +14,7 @@ const Search: FC<SearchProps> = ({ onChange }) => {
                     className='Search__input'
                     placeholder='search'
                     type='text'
-                    value={search}
+                    value={value}
                     onChange={inputHandler}
                 />
             </div>
